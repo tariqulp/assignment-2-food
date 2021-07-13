@@ -160,3 +160,21 @@ footer div p{
     color: #000000;
     padding: 0 0 0 130px;
 }
+/* footer end */
+
+/* media queries */
+
+@media only screen and (max-width:668px) {
+    .header-title, .player-container, .container, .hl-container, footer{
+        width: 100%;
+    }
+    .copa-america, .player, .hl-container, div{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-title, .players, .hl-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
