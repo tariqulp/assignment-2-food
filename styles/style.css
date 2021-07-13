@@ -1,0 +1,162 @@
+/* Base Font style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+/* ---------------------------------------------------------------------*/
+
+/*-----------
+ Utilities
+---------- */
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #FFFFFF;
+    margin: 0;
+}
+header{
+    margin-bottom: 70px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.link-button{
+    text-decoration: none;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E02C6D;
+    padding: 10px 24px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-left:  156px;
+
+
+}
+.fa-arrow-right{
+    margin: 0px 8px;
+}
+
+/* banner style */
+.header-title{
+    height: 677px;
+    background: #2D25A0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copa-america{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.event-title{
+    font-size: 64px;
+    color: #FFFFFF;
+    margin-left: 156px;
+    
+}
+.copa-america img{
+    width: 556.01px;
+    height: 438px;
+    padding-right: 140.99px;
+    padding-left: 170px;
+
+    /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+}
+/* banner style end */
+
+/* ---------------
+  Players bio start
+------------------ */
+.conatiner{
+    width: 1050px;
+    height: 474px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    margin-bottom: 27px;
+}
+.player{
+    width: 300px;
+    height: 426px;
+    background: #FFFFFF;
+    padding: 30px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player-name h2{
+    font-size: 28px;
+    color: #18191F;
+}
+.thumbnail img{
+    width: 300px;
+    height: 256px;
+}
+.player-name p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #6C6C6C;
+}
+/* players bio end */
+
+/* <!-- Highlights Part Start --> */
+.highlights-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 66px;
+    margin: 138px 0 158px 0;
+}
+.highlight{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 469px;
+    height: 309px;
+    background: white;
+}
+.title{
+    font-size: 48px;
+    color: #0A0826;
+}
+.highlight p{
+    font-size: 16px;
+    color: #6C6C6C
+}
+.second{
+    margin: 0;
+}
+.banner img{
+    width: 567px;
+    height: 427px;
+}
+/* Highlights Part End */
+
+/* footer start */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin-bottom: 51px;
+}
+.footer-img img{
+    width: 483.87px;
+    height: 110px;
+}
+.social-icon{
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+    padding: 0 0 20px 180px ;
+}
+footer div p{
+    font-size: 18px;
+    color: #000000;
+    padding: 0 0 0 130px;
+}
