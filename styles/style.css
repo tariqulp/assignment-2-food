@@ -10,9 +10,6 @@ body{
     background: #FFFFFF;
     margin: 0;
 }
-header{
-    margin-bottom: 70px;
-}
 main{
     display: flex;
     flex-direction: column;
@@ -48,11 +45,11 @@ main{
 
 /* banner style */
 .header-title{
+    display: flex;
     height: 677px;
     background: #2D25A0;
-    display: grid;
-    grid-template-columns: repeat(2, fr);
-    grid-column-gap: 150px;
+    display: flex;
+    margin-bottom: 70px;
 }
 .copa-america{
     display: flex;
@@ -60,14 +57,15 @@ main{
     align-items: center;
     
 }
+.title{
+    display: flex;
+    flex-direction: column;
+}
 .event-title{
     font-size: 64px;
     color: #FFFFFF;
     margin-left: 156px;
     
-}
-.copa-america img:hover{
-    transition:transform 1s;
 }
 .copa-america img{
     width: 556.01px;
@@ -235,16 +233,25 @@ footer div p{
 /* media queries */
 
 @media only screen and (max-width: 668px) {
-    .hl-container, .player-container, .container, .footer-half, .containers{
+    .copa-america, .player-container, .container, .footer-half, .containers{
         width: 100%;
     }
-    .hl-container, .container, .player-container, .footer-half{
+    .header-title{
+        flex-direction: column;
+        align-items: center;
+    }
+    .title{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
+    }
+    .copa-america, .hl-container, .container, .player-container, .footer-half{
+        display: flex;
+        flex-direction: column;
         align-items: center;
         padding: 5px;
     }
-    .hl-container, .player, .footer-half{
+    .copa-america, .player, .footer-half{
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -262,12 +269,16 @@ footer div p{
 }
 
 @media only screen and (min-width:689px) and (max-width:1024px) {
-    .hl-container, .player-container, .container, .footer-half, .containers{
+    .header-title, .hl-container, .player-container, .container, .footer-half, .containers{
         width: 100%;
+    }
+    .copa-america{
+        flex-direction: column;
+        align-items: center;
     }
     .hl-container, .container, .player-container, .footer-half, .containers{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         padding: 5px;
     }
