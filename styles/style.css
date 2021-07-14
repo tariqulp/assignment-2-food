@@ -19,8 +19,7 @@ main{
     background: #E02C6D;
     box-shadow: 0 0 80px #2196f3, 0 0 80px #2196f3, 0 0 80px #2196f3;
     font-size: 1em;
-    transition: transform 0.8s ease;
-    transition: 0.8s;
+    /* transition: 0.8s; */
 }
 .link-button{
     width: 168px;
@@ -233,10 +232,11 @@ footer div p{
 /* media queries */
 
 @media only screen and (max-width: 668px) {
-    .copa-america, .player-container, .container, .footer-half, .containers{
+    .title, .copa-america, .player-container, .container, .footer-half, .containers{
         width: 100%;
     }
     .header-title{
+        height: 695px;
         flex-direction: column;
         align-items: center;
     }
@@ -244,6 +244,11 @@ footer div p{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .event-title{
+        flex-direction: column;
+        align-items: center;
+        word-wrap: wrap;
     }
     .copa-america, .hl-container, .container, .player-container, .footer-half{
         display: flex;
