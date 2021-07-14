@@ -18,6 +18,9 @@ main{
     flex-direction: column;
     align-items: center;
 }
+.link-button:hover{
+    color: green;
+}
 .link-button{
     text-decoration: none;
     width: 130px;
@@ -41,9 +44,9 @@ main{
 .header-title{
     height: 677px;
     background: #2D25A0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, fr);
+    grid-column-gap: 150px;
 }
 .copa-america{
     display: flex;
@@ -57,13 +60,15 @@ main{
     margin-left: 156px;
     
 }
+.copa-america img:hover{
+    transition:transform 1s;
+}
 .copa-america img{
     width: 556.01px;
     height: 438px;
     padding-right: 140.99px;
     padding-left: 170px;
 
-    /* transform: matrix(-1, 0, 0, 1, 0, 0); */
 }
 /* banner style end */
 
@@ -105,16 +110,20 @@ main{
 /* <!-- Highlights Part Start --> */
 .highlights-container{
     display: grid;
+    grid-template-columns: none;
+}
+.hl-container{
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 66px;
     margin: 138px 0 158px 0;
 }
 .highlight{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
+    /* align-items: flex-start; */
     width: 469px;
-    height: 309px;
+    height: 300px;
     background: white;
 }
 .title{
@@ -131,12 +140,13 @@ main{
 .banner img{
     width: 567px;
     height: 427px;
+    padding-left: 90px;
 }
 /* Highlights Part End */
 
 /* footer start */
 footer{
-    display: flex;
+    display: grid;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -144,37 +154,50 @@ footer{
     margin-bottom: 51px;
 }
 .footer-img img{
-    width: 483.87px;
+    width: 481px;
     height: 110px;
 }
 .social-icon{
     width: 120px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     color: gray;
     padding: 0 0 20px 180px ;
+    margin-left: 20px;
 }
 footer div p{
     font-size: 18px;
     color: #000000;
     padding: 0 0 0 130px;
+    margin-left: 15px;
 }
 /* footer end */
 
 /* media queries */
 
-@media only screen and (max-width:668px) {
-    .header-title, .player-container, .container, .hl-container, footer{
+@media only screen and (max-width: 668px) {
+    .hl-container, .player-container, .container, .footer-half{
         width: 100%;
     }
-    .copa-america, .player, .hl-container, div{
+    .hl-container, .container, .player-container, .footer-half{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 5px;
+    }
+    .hl-container, .player, .footer-half{
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .header-title, .players, .hl-container{
+    .footer-img img{
+        width: 100%;
+    }
+    .header-title, .players, .footer-half{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .highlights-container{
+        display: none;
     }
     
 }
